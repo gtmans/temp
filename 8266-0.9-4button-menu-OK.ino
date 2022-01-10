@@ -51,23 +51,6 @@ void displaystring  (String value){
   u8g2.sendBuffer   ();    
 }
 
-void displaytest    (){
-  u8g2.setFont      (u8g2_font_courB08_tf);       // smaller font
-  u8g2.clearBuffer  ();    
-  u8g2.setCursor    (8,8);
-  u8g2.print        ("8,8");
-  u8g2.setCursor    (16,16);
-  u8g2.print        ("16,16");
-  u8g2.setCursor    (24,24);
-  u8g2.print        ("24,24");
-  u8g2.setCursor    (32,32);
-  u8g2.print        ("32,32");
-  u8g2.setCursor    (40,40);
-  u8g2.print        ("40,40");
-  u8g2.sendBuffer   ();    
-}
-
-
 void buttons(){  
   Serial.println ("Entering setup mode.");
   displaystring  ("setup");
